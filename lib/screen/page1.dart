@@ -12,6 +12,7 @@ class Page1 extends StatelessWidget {
         child: Column(
           children: [
             const SizedBox(height: 80),
+            // Gambar Bulat
             Container(
               width: 170,
               height: 170,
@@ -24,6 +25,8 @@ class Page1 extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 30),
+
+            // Judul
             const Text(
               "Welcome",
               style: TextStyle(
@@ -33,6 +36,8 @@ class Page1 extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 10),
+
+            // Subjudul
             const Text(
               "Don't worry! We got you covered.\nUse Wallie instead of cash",
               textAlign: TextAlign.center,
@@ -42,6 +47,44 @@ class Page1 extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 30),
+
+            // Titik-titik indikator (titik ke-2 aktif)
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Container(
+                  width: 8,
+                  height: 8,
+                  margin: const EdgeInsets.symmetric(horizontal: 3),
+                  decoration: BoxDecoration(
+                    color: Colors.teal.withOpacity(0.3), // titik 1 (nonaktif)
+                    shape: BoxShape.circle,
+                  ),
+                ),
+                Container(
+                  width: 8,
+                  height: 8,
+                  margin: const EdgeInsets.symmetric(horizontal: 3),
+                  decoration: const BoxDecoration(
+                    color: Colors.teal, // titik 2 (aktif)
+                    shape: BoxShape.circle,
+                  ),
+                ),
+                Container(
+                  width: 8,
+                  height: 8,
+                  margin: const EdgeInsets.symmetric(horizontal: 3),
+                  decoration: BoxDecoration(
+                    color: Colors.teal.withOpacity(0.3), // titik 3 (nonaktif)
+                    shape: BoxShape.circle,
+                  ),
+                ),
+              ],
+            ),
+
+            const SizedBox(height: 20),
+
+            // Tombol Continue
             Center(
               child: SizedBox(
                 width: 300,
@@ -69,7 +112,10 @@ class Page1 extends StatelessWidget {
                 ),
               ),
             ),
+
             const Spacer(),
+
+            // Nama dan NIM
             const Text(
               "Wahyu Slamet Adi Triyono | 1125170131",
               style: TextStyle(

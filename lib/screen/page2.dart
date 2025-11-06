@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kb1179_1125170131_uas/screen/page3.dart';
 
 class Page2 extends StatelessWidget {
   const Page2({super.key});
@@ -11,6 +12,8 @@ class Page2 extends StatelessWidget {
         child: Column(
           children: [
             const SizedBox(height: 80),
+
+            // Gambar bulat
             Container(
               width: 170,
               height: 170,
@@ -25,6 +28,7 @@ class Page2 extends StatelessWidget {
 
             const SizedBox(height: 30),
 
+            // Judul
             const Text(
               "Welcome",
               style: TextStyle(
@@ -36,6 +40,7 @@ class Page2 extends StatelessWidget {
 
             const SizedBox(height: 10),
 
+            // Subjudul
             const Text(
               "Let's try Wallie now!\nAnd get the best solution",
               textAlign: TextAlign.center,
@@ -46,6 +51,44 @@ class Page2 extends StatelessWidget {
             ),
 
             const SizedBox(height: 30),
+
+            // Titik indikator (titik ke-3 aktif)
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Container(
+                  width: 8,
+                  height: 8,
+                  margin: const EdgeInsets.symmetric(horizontal: 3),
+                  decoration: BoxDecoration(
+                    color: Colors.teal.withOpacity(0.3), // titik 1 nonaktif
+                    shape: BoxShape.circle,
+                  ),
+                ),
+                Container(
+                  width: 8,
+                  height: 8,
+                  margin: const EdgeInsets.symmetric(horizontal: 3),
+                  decoration: BoxDecoration(
+                    color: Colors.teal.withOpacity(0.3), // titik 2 nonaktif
+                    shape: BoxShape.circle,
+                  ),
+                ),
+                Container(
+                  width: 8,
+                  height: 8,
+                  margin: const EdgeInsets.symmetric(horizontal: 3),
+                  decoration: const BoxDecoration(
+                    color: Colors.teal, // titik 3 aktif
+                    shape: BoxShape.circle,
+                  ),
+                ),
+              ],
+            ),
+
+            const SizedBox(height: 20),
+
+            // Tombol Get Started
             Center(
               child: SizedBox(
                 width: 300,
@@ -58,9 +101,13 @@ class Page2 extends StatelessWidget {
                     ),
                   ),
                   onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (c) => const Page3()),
+                    );
                   },
                   child: const Text(
-                    "Continue",
+                    "Get Started",
                     style: TextStyle(
                       fontSize: 16,
                       color: Colors.white,
@@ -72,6 +119,7 @@ class Page2 extends StatelessWidget {
 
             const Spacer(),
 
+            // Nama dan NIM
             const Text(
               "Wahyu Slamet Adi Triyono | 1125170131",
               style: TextStyle(

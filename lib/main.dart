@@ -62,10 +62,45 @@ class SplashScreen extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 30),
+
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Container(
+                  width: 8,
+                  height: 8,
+                  margin: const EdgeInsets.symmetric(horizontal: 3),
+                  decoration: const BoxDecoration(
+                    color: Colors.teal,
+                    shape: BoxShape.circle,
+                  ),
+                ),
+                Container(
+                  width: 8,
+                  height: 8,
+                  margin: const EdgeInsets.symmetric(horizontal: 3),
+                  decoration: BoxDecoration(
+                    color: Colors.teal.withOpacity(0.3),
+                    shape: BoxShape.circle,
+                  ),
+                ),
+                Container(
+                  width: 8,
+                  height: 8,
+                  margin: const EdgeInsets.symmetric(horizontal: 3),
+                  decoration: BoxDecoration(
+                    color: Colors.teal.withOpacity(0.3),
+                    shape: BoxShape.circle,
+                  ),
+                ),
+              ],
+            ),
+
+            const SizedBox(height: 20),
+
             Center(
               child: SizedBox(
-                width:
-                    300,
+                width: 300,
                 height: 48,
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
@@ -90,7 +125,9 @@ class SplashScreen extends StatelessWidget {
                 ),
               ),
             ),
+
             const Spacer(),
+
             const Text(
               "Wahyu Slamet Adi Triyono | 1125170131",
               style: TextStyle(
