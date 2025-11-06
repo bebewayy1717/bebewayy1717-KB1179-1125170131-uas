@@ -23,17 +23,15 @@ class Page1 extends StatelessWidget {
                 ),
               ),
             ),
-
             const SizedBox(height: 30),
             const Text(
               "Welcome",
               style: TextStyle(
                 fontSize: 28,
                 fontWeight: FontWeight.bold,
-                color: Colors.black,  
+                color: Colors.black,
               ),
             ),
-
             const SizedBox(height: 10),
             const Text(
               "Don't worry! We got you covered.\nUse Wallie instead of cash",
@@ -43,36 +41,35 @@ class Page1 extends StatelessWidget {
                 color: Colors.teal,
               ),
             ),
-
-            const SizedBox(height: 50),
-            SizedBox(
-              width: double.infinity,
-              height: 45,
-              child: ElevatedButton(
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.teal,
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(12),
+            const SizedBox(height: 30),
+            Center(
+              child: SizedBox(
+                width: 300,
+                height: 48,
+                child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.teal,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10),
+                    ),
                   ),
-                ),
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => const Page2()),
-                  );
-                },
-                child: const Text(
-                  "Continue",
-                  style: TextStyle(
-                    fontSize: 16,
-                    color: Colors.white,
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (c) => const Page2()),
+                    );
+                  },
+                  child: const Text(
+                    "Continue",
+                    style: TextStyle(
+                      fontSize: 16,
+                      color: Colors.white,
+                    ),
                   ),
                 ),
               ),
             ),
-
             const Spacer(),
-
             const Text(
               "Wahyu Slamet Adi Triyono | 1125170131",
               style: TextStyle(
@@ -80,7 +77,6 @@ class Page1 extends StatelessWidget {
                 color: Colors.black54,
               ),
             ),
-
             const SizedBox(height: 20),
           ],
         ),

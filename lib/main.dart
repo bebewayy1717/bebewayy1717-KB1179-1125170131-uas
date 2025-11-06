@@ -44,9 +44,7 @@ class SplashScreen extends StatelessWidget {
                 ),
               ),
             ),
-
             const SizedBox(height: 24),
-
             const Text(
               "Welcome",
               style: TextStyle(
@@ -54,9 +52,7 @@ class SplashScreen extends StatelessWidget {
                 fontWeight: FontWeight.bold,
               ),
             ),
-
             const SizedBox(height: 12),
-
             const Text(
               "Forgot to bring your wallet\nwhen you are shopping?",
               textAlign: TextAlign.center,
@@ -65,36 +61,36 @@ class SplashScreen extends StatelessWidget {
                 color: Colors.teal,
               ),
             ),
-
             const SizedBox(height: 30),
-            SizedBox(
-              width: double.infinity,
-              height: 48,
-              child: ElevatedButton(
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.teal,
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(10),
+            Center(
+              child: SizedBox(
+                width:
+                    300,
+                height: 48,
+                child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.teal,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10),
+                    ),
                   ),
-                ),
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (c) => const Page1()),
-                  );
-                },
-                child: const Text(
-                  "Continue",
-                  style: TextStyle(
-                    fontSize: 16,
-                    color: Colors.white,
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (c) => const Page1()),
+                    );
+                  },
+                  child: const Text(
+                    "Continue",
+                    style: TextStyle(
+                      fontSize: 16,
+                      color: Colors.white,
+                    ),
                   ),
                 ),
               ),
             ),
-
             const Spacer(),
-
             const Text(
               "Wahyu Slamet Adi Triyono | 1125170131",
               style: TextStyle(
@@ -102,7 +98,6 @@ class SplashScreen extends StatelessWidget {
                 color: Colors.black54,
               ),
             ),
-
             const SizedBox(height: 20),
           ],
         ),
