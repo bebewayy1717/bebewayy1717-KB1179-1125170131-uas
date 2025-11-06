@@ -7,47 +7,81 @@ class Page1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
+      body: Padding(
+        padding: const EdgeInsets.all(24.0),
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            const SizedBox(height: 80),
             Container(
-              width: 150,
-              height: 150,
-              color: Colors.grey[300],
+              width: 170,
+              height: 170,
+              decoration: const BoxDecoration(
+                shape: BoxShape.circle,
+                image: DecorationImage(
+                  image: AssetImage("assets/images/img2.jpeg"),
+                  fit: BoxFit.cover,
+                ),
+              ),
             ),
 
-            const SizedBox(height: 20),
-
+            const SizedBox(height: 30),
             const Text(
               "Welcome",
               style: TextStyle(
                 fontSize: 28,
                 fontWeight: FontWeight.bold,
+                color: Colors.black,  
               ),
             ),
 
             const SizedBox(height: 10),
             const Text(
-              "Don't worry!\nWe got you covered.",
+              "Don't worry! We got you covered.\nUse Wallie instead of cash",
               textAlign: TextAlign.center,
+              style: TextStyle(
+                fontSize: 16,
+                color: Colors.teal,
+              ),
             ),
 
-            const SizedBox(height: 30),
-
-            ElevatedButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => const Page2()),
-                );
-              },
-              child: const Text("Continue"),
+            const SizedBox(height: 50),
+            SizedBox(
+              width: double.infinity,
+              height: 45,
+              child: ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.teal,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                ),
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const Page2()),
+                  );
+                },
+                child: const Text(
+                  "Continue",
+                  style: TextStyle(
+                    fontSize: 16,
+                    color: Colors.white,
+                  ),
+                ),
+              ),
             ),
 
-            const SizedBox(height: 60),
+            const Spacer(),
 
-            const Text("1125170131", style: TextStyle(fontSize: 12))
+            const Text(
+              "Wahyu Slamet Adi Triyono | 1125170131",
+              style: TextStyle(
+                fontSize: 12,
+                color: Colors.black54,
+              ),
+            ),
+
+            const SizedBox(height: 20),
           ],
         ),
       ),
