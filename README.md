@@ -1,10 +1,10 @@
 1. Tampilan Aplikasi
    Berikut adalah tampilan dari aplikasi saya:
 
-![Screen 1](assets/images/screen1.jpeg)
-![Screen 2](assets/images/screen2.jpeg)
-![Screen 3](assets/images/screen3.jpeg)
-![Screen 4](assets/images/screen4.jpeg)
+![Screen 1](assets/images/readme/screen1.jpeg)
+![Screen 2](assets/images/readme/screen2.jpeg)
+![Screen 3](assets/images/readme/screen3.jpeg)
+![Screen 4](assets/images/readme/screen4.jpeg)
 
 2. NAMA : WAHYU SLAMET ADI TRIYONO
 3. NIM : 1125170131
