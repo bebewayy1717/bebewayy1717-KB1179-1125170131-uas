@@ -1,16 +1,17 @@
-# kb1179_1125170131_uas
+1. Tampilan Aplikasi
+   Berikut adalah tampilan dari aplikasi saya:
 
-A new Flutter project.
+![Screen 1](assets/images/screen1.jpeg)
+![Screen 2](assets/images/screen2.jpeg)
+![Screen 3](assets/images/screen3.jpeg)
+![Screen 4](assets/images/screen4.jpeg)
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+2. NAMA : WAHYU SLAMET ADI TRIYONO
+3. NIM : 1125170131
+4. - Buka folder project
+   - Buka Lib lalu Main
+   - Klik Kanan pada main.dart
+   - pilih "Open Integrated Terminal"
+   - Pada terminal masukan perintah "flutter run"
+   - Pilih device dengan angka sesuai kebutuhan (chrome, edge, android, windows)
+   - Project akan berjalan dan aplikasi akan terbuka.
